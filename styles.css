@@ -388,7 +388,7 @@ transition: all 0.3s ease;
     rgba(0,0,0,0)0%,
     rgba(17,17,17,0.6)100%
   ), 
-  url("images/CTF.jpg");
+  url("Images/CTF.jpg");
   position: relative;
   color: #fff;
 }
@@ -399,7 +399,7 @@ transition: all 0.3s ease;
   rgba(0,0,0,0)0%,
   rgba(17,17,17,0.6)100%
   ),
-  url("images/Keyboard.jpg");
+  url("Images/Keyboard.jpg");
   background-size: cover;
   position: relative;
 }
