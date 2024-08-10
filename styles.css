@@ -554,3 +554,15 @@ left: 30px;
     width: 100%;
   }
 }
+
+
+/*About Me page CSS*/
+
+.about_me {
+  background-color: #FFE6A7;
+  background-size: cover;
+}
+
+.about_img--container {
+  
+}
