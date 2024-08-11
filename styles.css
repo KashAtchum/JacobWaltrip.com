@@ -251,14 +251,14 @@ transition: all 0.3s ease;
 
 .main__btn:hover:after{
   width: 100%;
-} */
+} 
 .main__img--container{
   text-align: center;
 }
 
 #main__img {
-  height: 80%;
-  width: 80%;
+  max-height: 80%;
+  max-width: 80%;
 }
 
 /* Mobile Response */
@@ -290,6 +290,7 @@ transition: all 0.3s ease;
   .main__content p {
     font-size: 1.8rem;
   }
+  
 }
 @media screen and (max-width: 480px) {
   .main__content h1 {
@@ -306,15 +307,19 @@ transition: all 0.3s ease;
     padding: 12px 36px;
     margin: 2.5rem 0;
   }
+  #main__img {
+    align-items: center;
+  }
 }
 
 /** Services Section**/
 .services {
+  padding-top: 10rem;
   background: #FFE6A7;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 .services h1 {
   background-color: #99582A;
@@ -330,7 +335,6 @@ transition: all 0.3s ease;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
 }
 .services__card{
   margin: 1rem;
@@ -342,7 +346,7 @@ transition: all 0.3s ease;
     rgba(0,0,0,0)0%,
     rgba(17,17,17,0.6)100%
   ), 
-  url("Images/CTF.jpg");
+  url("images/CTF.jpg");
   position: relative;
   color: #fff;
 }
@@ -353,7 +357,7 @@ transition: all 0.3s ease;
   rgba(0,0,0,0)0%,
   rgba(17,17,17,0.6)100%
   ),
-  url("Images/Keyboard.jpg");
+  url("images/Keyboard.jpg");
   background-size: cover;
   position: relative;
 }
@@ -363,7 +367,7 @@ transition: all 0.3s ease;
   rgba(0,0,0,0)0%,
   rgba(17,17,17,0.6)100%
   ),
-  url("Images/Tree.png");
+  url("images/Tree.png");
   background-size: cover;
   position: relative;
 }
@@ -401,7 +405,8 @@ left: 30px;
 
 @media screen and (max-width: 960px) {
   .services{
-    height: 1600px;
+    height: auto;
+    
   }
   .services h1 {
     font-size: 2rem;
@@ -411,7 +416,7 @@ left: 30px;
 
 @media screen and (max-width: 480px) {
   .services{
-    height: 1400px;
+    height: auto;
   }
   
   .services h1 {
@@ -425,11 +430,11 @@ left: 30px;
 /*Footer CSS*/
 .footer__container {
   background-color: #99582A;
-  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: left;
+  position: relative;
 }
 
 #footer__logo {
@@ -564,5 +569,23 @@ left: 30px;
 }
 
 .about_img--container {
-  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#re_enlist{
+  height: 25rem;
+  width: auto;
+}
+
+#als {
+  height: 25rem;
+  width: auto;
+}
+
+#cc_grad {
+  height: 25rem;
 }
