@@ -346,7 +346,7 @@ transition: all 0.3s ease;
     rgba(0,0,0,0)0%,
     rgba(17,17,17,0.6)100%
   ), 
-  url("Images/CTF.jpg");
+  url("images/CTF.jpg");
   position: relative;
   color: #fff;
 }
@@ -357,7 +357,7 @@ transition: all 0.3s ease;
   rgba(0,0,0,0)0%,
   rgba(17,17,17,0.6)100%
   ),
-  url("Images/Keyboard.jpg");
+  url("images/Keyboard.jpg");
   background-size: cover;
   position: relative;
 }
@@ -367,10 +367,22 @@ transition: all 0.3s ease;
   rgba(0,0,0,0)0%,
   rgba(17,17,17,0.6)100%
   ),
-  url("Images/Tree.png");
+  url("images/Tree.png");
   background-size: cover;
   position: relative;
 }
+
+.services_link {
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+.services_link:visited {
+  color: inherit;
+}
+
 .services h2{
 position: absolute;
 top: 350px;
@@ -630,7 +642,10 @@ left: 30px;
   justify-content: left;
   flex-wrap: wrap;
 }
-
+.projects_menu{
+  display: flex;
+  flex-direction: roe;
+}
 .projects_card {
   margin: 1rem;
   height: 200px;
@@ -641,12 +656,23 @@ left: 30px;
     rgba(0,0,0,0)0%,
     rgba(17,17,17,0.6)100%
   ), 
-  url("Images/website_code.png");
+  url("images/website_code.png");
   background-size: contain;
   position: relative;
   color: #fff;
 }
 
+.projects_card:nth-child(2){
+  background-image: linear-gradient(
+    to bottom, 
+    rgba(0,0,0,0)0%,
+    rgba(17,17,17,0.6)100%
+  ), 
+  url("images/htb.png");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+}
 .projects h2 {
   position: absolute;
   bottom: 110px;
@@ -679,6 +705,7 @@ left: 30px;
   text-decoration: none;
   height: 100%;
   width: 100%;
+  color: #fff;
 }
 .projects_card:hover {
   transform: scale(1.075);
@@ -802,4 +829,99 @@ left: 30px;
     .contact_right {
       display: none;
     }
+}
+
+
+/*CTF Page CSS*/
+
+.ctf {
+  background: #FFE6A7;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  align-items: center;
+}
+
+.ctf h1 {
+  text-align: center;
+  background-color: #99582A;
+  background-size: 100%;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.ctf h2 {
+  text-align: center;
+  background-color: #99582A;
+  background-size: 100%;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.ctf_container {
+  display: flex; 
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.ctf_card {
+  margin: 1rem;
+  height: 200px;
+  width: 300px;
+  border-radius: 4px;
+  background-image:
+  url("images/jble.png");
+  background-size: cover;
+  position: relative;
+  color: #131313;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.ctf_card:nth-child(2){
+  background-image:
+  url("images/real_world.png");
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  text-shadow: #131313;
+}
+
+.ctf_card:nth-child(3){
+  background-image:
+  url("images/ugra.png");
+  background-size: cover;
+  position: relative;
+}
+.ctf_card:nth-child(4){
+  background-image:
+  url("images/afcea.png");
+  background-size: cover;
+  position: relative;
+}
+
+.ctf h3 {
+  position: absolute;
+  bottom: 110px;
+  left: 15px;
+}
+
+/* RESUME CSS*/
+.resume_container{
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+.resume {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
