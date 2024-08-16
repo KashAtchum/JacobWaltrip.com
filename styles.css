@@ -644,7 +644,7 @@ left: 30px;
 }
 .projects_menu{
   display: flex;
-  flex-direction: roe;
+  flex-direction: row;
 }
 .projects_card {
   margin: 1rem;
@@ -831,87 +831,67 @@ left: 30px;
     }
 }
 
+/*CTF CSS*/
+.competition-header {
+  margin: 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  background-color: #faecc8;
+  text-align: center;
+  color: #99582A;
+}
 
-/*CTF Page CSS*/
-
-.ctf {
-  background: #FFE6A7;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
+.ctf-container {
+  padding: 40px 20px;
+  background-color: #faecc8;
+  min-width: 100%;
   min-height: 80vh;
-  align-items: center;
 }
 
-.ctf h1 {
-  text-align: center;
+#ctfs {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ctf-container h2 {
+  color: #432818;
+}
+.ctf {
   background-color: #99582A;
-  background-size: 100%;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  border-left: 8px solid #6f1d1b;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
-.ctf h2 {
-  text-align: center;
-  background-color: #99582A;
-  background-size: 100%;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+.ctf:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
-.ctf_container {
-  display: flex; 
-  justify-content: left;
-  flex-wrap: wrap;
+.ctf-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.ctf_card {
-  margin: 1rem;
-  height: 200px;
-  width: 300px;
-  border-radius: 4px;
-  background-image:
-  url("images/jble.png");
-  background-size: cover;
-  position: relative;
-  color: #131313;
-  text-shadow: 1px 1px 2px #fff;
+.ctf-header h3 {
+  margin: 0;
+  color: #faecc8;
+  font-size: 1.8em;
 }
 
-.ctf_card:nth-child(2){
-  background-image:
-  url("images/real_world.png");
-  background-size: cover;
-  position: relative;
-  color: #fff;
-  text-shadow: #131313;
+.ctf-header p {
+  margin: 5px 0;
+  color: #faecc8;
+  font-size: 1.1em;
 }
 
-.ctf_card:nth-child(3){
-  background-image:
-  url("images/ugra.png");
-  background-size: cover;
-  position: relative;
-}
-.ctf_card:nth-child(4){
-  background-image:
-  url("images/afcea.png");
-  background-size: cover;
-  position: relative;
-}
-
-.ctf h3 {
-  position: absolute;
-  bottom: 110px;
-  left: 15px;
+.ctf-description {
+  margin-top: 10px;
+  color: #faecc8;
+  line-height: 1.6;
 }
 
 /* RESUME CSS*/
